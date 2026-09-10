@@ -1,0 +1,19 @@
+project:
+  name: sofc-health-intelligence
+  random_seed: 42
+
+data:
+  expected_cells: [N1, N2, N3, N4, N5, N6, R1, R2]
+  regular_redox_cells: [N1, N2, N3, N4, N5, N6]
+  randomized_redox_cells: [R1, R2]
+  reference_voltage_v: 0.70
+
+validation:
+  outer_strategy: leave_one_cell_out
+  inner_strategy: expanding_window
+  shuffle: false
+  primary_forecast_horizons: [1, 3, 5, 10]
+
+quality:
+  fail_on_missing_core_values: true
+  fail_on_duplicate_coordinates: true

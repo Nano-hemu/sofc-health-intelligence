@@ -1,0 +1,14 @@
+.git
+.venv
+__pycache__
+.pytest_cache
+.ruff_cache
+.mypy_cache
+data/raw/*
+data/interim/*
+data/processed/*
+models/*
+reports/figures/*
+reports/tables/*
+*.pyc
+*.ipynb_checkpoints

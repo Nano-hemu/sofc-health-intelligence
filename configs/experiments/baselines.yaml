@@ -1,0 +1,16 @@
+experiment: baseline_backtest
+target: soh_composite_pct
+models:
+  - persistence
+  - drift
+  - damped_local_trend
+  - exponential_smoothing
+  - arima_110
+validation:
+  outer: leave_one_cell_out
+  inner: expanding_window
+  minimum_history: 8
+  gap: 0
+  horizons: [1, 3, 5, 10]
+metrics: [mae, rmse, bias, r2, mase]
+report_by: [model, cell_id, horizon]

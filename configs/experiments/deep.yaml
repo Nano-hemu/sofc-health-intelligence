@@ -1,0 +1,13 @@
+experiment: gru_sequence_comparison
+enabled_only_after_tabular_baselines: true
+random_seed: 42
+sequence_length: 8
+hidden_size: 32
+dropout: 0.15
+batch_size: 16
+maximum_epochs: 200
+early_stopping_patience: 20
+validation:
+  outer: leave_one_cell_out
+  inner: expanding_window
+comparison_rule: retain_only_if_cross_cell_error_and_calibration_improve

@@ -1,0 +1,28 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+mlruns/
+artifacts/
+
+# Generated experiment outputs and serialized estimators.
+models/*
+reports/figures/*
+reports/tables/*
+!models/README.md
+!models/.gitkeep
+!reports/figures/.gitkeep
+!reports/tables/.gitkeep
+
+# Dataset files are downloaded reproducibly and remain under their own licence.
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep

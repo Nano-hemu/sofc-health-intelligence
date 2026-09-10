@@ -1,0 +1,26 @@
+experiment: multimodal_ml
+target: soh_composite_pct
+random_seed: 42
+models:
+  - ridge
+  - extra_trees
+  - hist_gradient_boosting
+optional_boosters:
+  - xgboost
+  - lightgbm
+lags: [1, 2, 3]
+validation:
+  outer: leave_one_cell_out
+  inner: expanding_window
+  preprocessing_fit_scope: training_fold_only
+uncertainty:
+  method: split_conformal
+  alpha: 0.10
+ablations:
+  - only_eis
+  - only_iv
+  - only_transient
+  - without_eis
+  - without_iv
+  - without_transient
+  - all_modalities
