@@ -37,7 +37,8 @@ not mean final scientific claims have been approved.
 - [x] `05_statistical_baselines.ipynb`
 - [x] `06_multimodal_ml.ipynb`
 - [x] `07_rul_and_uncertainty.ipynb`
-- [x] `08_ablation_and_portfolio_story.ipynb`
+- [x] `08_eis_health_coupling.ipynb`
+- [x] `09_ablation_and_portfolio_story.ipynb`
 - [x] `notebooks/README.md` execution order and decision map
 
 ## Documentation and quality
@@ -46,8 +47,9 @@ not mean final scientific claims have been approved.
 - [x] Model-card template, interview guide, GitHub release checklist, field-data extension plan
 - [x] Unit tests for ingestion safety, schema repair, features, targets, splits, metrics, models
 
-## Remaining scientific execution
+## Scientific execution status
 
-The structure is complete. Final model selection and resume metrics remain intentionally gated on
-running all nested experiments, reviewing domain-shift failures, and filling the model card. That is
-analysis work performed through the notebooks—not a missing repository file.
+The nine-notebook workflow has been executed and reviewed. Final model selection is horizon
+specific, cross-regime transfer is rejected, exact 80% SOH RUL remains unidentifiable because all
+cells are right-censored, and the verified portfolio claims are recorded in Notebook 09. These
+results describe an offline laboratory study, not a field-validated deployment model.

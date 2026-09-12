@@ -6,9 +6,9 @@ This repository turns raw longitudinal SOFC degradation experiments into an inte
 system. It combines transient current response, polarization curves, and electrochemical
 impedance spectroscopy (EIS) while enforcing leakage-safe validation across cells.
 
-> **Repository status:** all planned data, feature, target, validation, modeling, uncertainty,
-> ablation, documentation, and guided-notebook layers are implemented. Final performance claims
-> remain intentionally blank until the complete nested-validation experiment is run and reviewed.
+> **Repository status:** the complete nine-notebook workflow has been implemented, executed, and
+> reviewed. Verified results support horizon-specific, leakage-safe laboratory forecasting while
+> rejecting exact RUL, cross-regime transfer, and field-deployment claims.
 
 ## Why this project is different
 
@@ -106,7 +106,8 @@ The following rules are fixed before model development:
 - [x] Leakage-safe tabular ML and optional GRU interface
 - [x] Conformal uncertainty, domain-shift tests, and modality ablations
 - [x] Model-card template, experiment protocol, and resume-claim guardrails
-- [ ] Run and review the final nested experiments; populate verified metrics
+- [x] All-spectrum Lin-KK screening and EIS health-coupling analysis
+- [x] Run and review the final nested experiments; populate the engineering evidence gate
 
 ## Repository map
 
@@ -145,8 +146,9 @@ git push -u origin main
 Use `git status` before committing. The source ZIP, extracted MATLAB files, Parquet tables, model
 binaries, and generated experiment outputs must remain ignored.
 
-Generated metrics will not be placed in the README until they can be reproduced from a tagged
-commit. This repository is research software, not certified SOFC control or safety software.
+Verified metrics and their limitations are reported in the executed notebook workflow, culminating
+in Notebook 09. This repository is research software, not certified SOFC control or safety
+software.
 
 ## Licences
 

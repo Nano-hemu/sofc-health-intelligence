@@ -12,8 +12,10 @@ flowchart TD
     C --> D[Physics-aware features]
     D --> E[SOH candidates]
     E --> F[Leakage-safe backtests]
-    F --> G[Uncertainty and ablations]
-    G --> H[Model card and figures]
+    F --> G[Uncertainty and censored RUL]
+    G --> H[EIS validation and health coupling]
+    H --> I[Ablation and domain shift]
+    I --> J[Engineering evidence gate]
 ```
 
 ## Hard contracts

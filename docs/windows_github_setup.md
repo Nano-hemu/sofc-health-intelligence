@@ -22,7 +22,7 @@ pytest
 jupyter lab
 ```
 
-Run notebooks 01 through 08 in order. Stop when a validation contract fails; downstream plots are
+Run notebooks 01 through 09 in order. Stop when a validation contract fails; downstream plots are
 not evidence if upstream data or split assumptions are invalid.
 
 ## GitHub
