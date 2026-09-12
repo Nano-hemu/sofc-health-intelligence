@@ -1,4 +1,4 @@
-# SOFC Health Intelligence
+# SOFC-Health-Intelligence
 
 Physics-informed, multimodal prognostics for solid oxide fuel cells under redox degradation.
 
